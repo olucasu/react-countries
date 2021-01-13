@@ -7,7 +7,7 @@ const Header = () => {
         <nav>
             <ul>
                 <li>
-                    <Link exact="true" to="/">Home</Link>
+                    <Link exact="true" to="/react-countries">Home</Link>
                 </li>
             </ul>
         </nav>

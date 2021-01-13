@@ -22,7 +22,7 @@ function App() {
             <Route path="/countries/:countryId">
               <Details />
             </Route>
-            <Route path="/">
+            <Route path="/react-countries">
               <Home />
             </Route>
           </Switch>
