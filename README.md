@@ -1,5 +1,4 @@
-# Teste Softplan
+# React countries
 
-# app para listar países e realizar algumas edições client side
+## App para listar países e realizar algumas edições client side
 
-# Getting Started with Create React App
