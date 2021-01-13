@@ -37,7 +37,7 @@ class CountriesList extends React.Component {
         return (
             <ul className="countries-list">
                 { this.props.countries.map((item) => <li key={item.alpha3Code}>
-                    <Link onClick={()=> this.props.dispatch(this.findCountry(item.alpha3Code))} exact="true" to={ "/countries/"+item.alpha3Code}>{item.flag.emoji} {item.name}</Link>
+                    <Link onClick={()=> this.props.dispatch(this.findCountry(item.alpha3Code))} exact="true" to={ "/react-countries/countries/"+item.alpha3Code}>{item.flag.emoji} {item.name}</Link>
                 </li>)  }
             </ul>
         )
