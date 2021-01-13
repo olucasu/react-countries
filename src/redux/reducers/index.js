@@ -19,8 +19,6 @@ export default function (state = initialState, action) {
 
         case 'search_countries': {
             let inputValue = action.payload;
-            console.log(inputValue)
-
             if (inputValue.length == '') {
                 return {
                     ...state,
@@ -65,7 +63,7 @@ export default function (state = initialState, action) {
         case 'update_country': {
             let payload = action.payload;
             let mutatedCountry = {};
-            let mutatedCountries = state.countries.map((item) => {
+            let mutatedCountries = state.originalCountries.map((item) => {
                 if (item.alpha3Code != payload.alpha3Code) {
                     return item;
                 } else {
@@ -80,9 +78,6 @@ export default function (state = initialState, action) {
                     ...payload
                 }
             });
-            console.log("state", state.selectedCountry);
-            console.log("mutated", mutatedCountry);
-
 
             return {
                 ...state,
