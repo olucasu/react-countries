@@ -19,7 +19,7 @@ function App() {
       <div>
         <Header />
         <Switch>
-            <Route path="/countries/:countryId">
+            <Route path="/react-countries/countries/:countryId">
               <Details />
             </Route>
             <Route path="/react-countries">
