@@ -18,6 +18,10 @@ class CountriesList extends React.Component {
                     payload: response.data.Country
                 })
             })
+        } else {
+            this.props.dispatch({
+                type: 'refresh_countries'
+            });
         }
     }
 

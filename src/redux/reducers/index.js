@@ -60,6 +60,16 @@ export default function (state = initialState, action) {
             }
         }
 
+        case 'refresh_countries' : {
+            return {
+                ...state,
+                countries: [
+                    ...state.originalCountries
+                ]
+            }
+            
+        }
+
         case 'update_country': {
             let payload = action.payload;
             let mutatedCountry = {};
