@@ -1,5 +1,3 @@
-
-
 const GraphCountries = {
     fetch() {
        return fetch('https://countries-274616.ew.r.appspot.com', {
@@ -7,14 +5,20 @@ const GraphCountries = {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query: `
             query {
-                Country(first:10) {
-                    name,
-                    capital,
+                Country {
                     flag {
                         emoji
                         emojiUnicode
                         svgFile
-                    }
+                    },
+                    name,
+                    capital,
+                    area,
+                    population,
+                    topLevelDomains {
+                        name
+                    },
+                    alpha3Code,
                 }
             }
             ` }),
