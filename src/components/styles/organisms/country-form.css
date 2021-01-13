@@ -1,0 +1,34 @@
+
+.country-form {
+    border: 2px solid #2b303b;
+    box-shadow: -8px 9px 0px 0px #2b303b;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.country-form > .form-group > label {
+    display: block;
+    font-size: 13px;
+}
+
+.country-form > .form-group {
+    margin-bottom: 15px;
+}
+
+.country-form > .form-group > .error {
+    display: block;
+    color: red;
+}
+
+.country-form button {
+    border:  2px solid #2b303b;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+.country-form button:hover, .country-form button:focus {
+    cursor: pointer;
+    background-color: #2b303b;
+    color: #fff;
+    border:  2px solid #fff;
+}

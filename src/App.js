@@ -1,6 +1,7 @@
 import React from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Details from "./pages/Details";
 import Header from "./components/Header";
 
 
@@ -18,8 +19,8 @@ function App() {
       <div>
         <Header />
         <Switch>
-            <Route path="/about">
-              <About />
+            <Route path="/countries/:countryId">
+              <Details />
             </Route>
             <Route path="/">
               <Home />

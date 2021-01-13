@@ -1,0 +1,18 @@
+.details {
+    padding: 15px;
+}
+
+.details > .title {
+    font-size: 24px;
+}
+
+.details .list-info {
+    list-style: none;
+    padding: 0;
+}
+
+.details .list-info > li {
+    border-top: 2px solid #2b303b;
+    padding: 15px;
+    margin-bottom: 1px;
+}

@@ -9,9 +9,6 @@ const Header = () => {
                 <li>
                     <Link exact="true" to="/">Home</Link>
                 </li>
-                <li>
-                    <Link exact="true" to="/about">About</Link>
-                </li>
             </ul>
         </nav>
     )
